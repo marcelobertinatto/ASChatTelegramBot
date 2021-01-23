@@ -1,0 +1,11 @@
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/appsettings.Development.json
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/appsettings.json
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/ChatTelegramBot.dll
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/ChatTelegramBot.deps.json
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/ChatTelegramBot.runtimeconfig.json
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/ChatTelegramBot.pdb
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/Microsoft.AspNetCore.JsonPatch.dll
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/Newtonsoft.Json.dll
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/Newtonsoft.Json.Bson.dll
+/Users/marcelobertinatto/Desktop/ChatTelegramBot/Telegram.Bot.dll
