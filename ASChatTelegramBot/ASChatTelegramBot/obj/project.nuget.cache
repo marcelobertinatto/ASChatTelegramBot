@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hNvZiwbh8kw4HF3anc7rrACujBCtESFjI9ICoCBdhVUTZ2jEyfv5j18nBBUEevJ7nOmNFGA/TXSEG4hhQPjvpw==",
+  "dgSpecHash": "d9AmdrzOXYVwM73fo9QNKXeFF2Tqbfw1ShW3cn/YaEjqC0hP20VDcDUZGACZi6u8nFhiYCJW3CY5u2Iy8N9iAQ==",
   "success": true,
-  "projectFilePath": "D:\\Marcelo\\Sandbox\\GIT\\ASChatTelegramBot\\ChatTelegramBot.csproj",
+  "projectFilePath": "D:\\Marcelo\\Sandbox\\GIT\\ASChatTelegramBot\\ASChatTelegramBot\\ASChatTelegramBot\\ASChatTelegramBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marce\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.2\\microsoft.aspnetcore.jsonpatch.5.0.2.nupkg.sha512",
     "C:\\Users\\Marce\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.2\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.2.nupkg.sha512",

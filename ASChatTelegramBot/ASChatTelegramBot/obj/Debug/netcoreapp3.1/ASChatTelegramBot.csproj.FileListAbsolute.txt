@@ -1,0 +1,10 @@
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\netcoreapp3.1\ASChatTelegramBot.exe
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\ASChatTelegramBot.csprojAssemblyReference.cache
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\ASChatTelegramBot.AssemblyInfoInputs.cache
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\ASChatTelegramBot.AssemblyInfo.cs
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\ASChatTelegramBot.RazorTargetAssemblyInfo.cache
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\staticwebassets\ASChatTelegramBot.StaticWebAssets.Manifest.cache
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\netcoreapp3.1\staticwebassets\ASChatTelegramBot.StaticWebAssets.xml
