@@ -12,7 +12,6 @@ D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\bin\Debug\net5.0\Telegram.Bot.dll
-D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.csprojAssemblyReference.cache
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.GeneratedMSBuildEditorConfig.editorconfig
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.AssemblyInfoInputs.cache
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.AssemblyInfo.cs
