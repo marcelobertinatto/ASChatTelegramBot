@@ -26,3 +26,4 @@ D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ref\ASChatTelegramBot.dll
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.pdb
 D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.genruntimeconfig.cache
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Debug\net5.0\ASChatTelegramBot.csprojAssemblyReference.cache
