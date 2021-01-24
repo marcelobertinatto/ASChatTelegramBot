@@ -1,0 +1,12 @@
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\ASChatTelegramBot.exe
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\appsettings.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\ASChatTelegramBot.dll
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\ASChatTelegramBot.deps.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\ASChatTelegramBot.runtimeconfig.json
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\ASChatTelegramBot.pdb
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+D:\Marcelo\Sandbox\GIT\ASChatTelegramBot\ASChatTelegramBot\ASChatTelegramBot\obj\Release\net5.0\PubTmp\Out\Telegram.Bot.dll
