@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASChatTelegramBot", "ASChatTelegramBot\ASChatTelegramBot.csproj", "{77BA7CB9-75F2-40E0-80AB-700BE78EEDE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRequestTest", "ConsoleRequestTest\ConsoleRequestTest.csproj", "{386946B4-C0CD-4D15-853E-05638E6AF5C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRequestTest", "ConsoleRequestTest\ConsoleRequestTest.csproj", "{386946B4-C0CD-4D15-853E-05638E6AF5C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
