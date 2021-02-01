@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>6fab25d1-2715-4d20-9599-3c45bd6d773c</UserSecretsId>
   </PropertyGroup>
 
 
@@ -11,5 +13,13 @@
   <ItemGroup>
     <PackageReference Include="Telegram.Bot" Version="15.7.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="ASChatTelegramBot\ConsoleRequestTest\bin\Debug\netcoreapp3.1\ConsoleRequestTest.runtimeconfig.dev.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatTelegramBotService\ChatTelegramBotService.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
