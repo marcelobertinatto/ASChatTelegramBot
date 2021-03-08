@@ -42,3 +42,9 @@
 /Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBot/bin/Debug/net5.0/MySqlConnector.dll
 /Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBot/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBot/bin/Debug/net5.0/Pomelo.JsonObject.dll
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.csprojAssemblyReference.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.AssemblyInfoInputs.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.AssemblyInfo.cs
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.csproj.CoreCompileInputs.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/obj/Debug/net5.0/ChatTelegramBot.MvcApplicationPartsAssemblyInfo.cache

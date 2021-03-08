@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ChatTelegramBotService;
 using ChatTelegramBotService.Data;
 using ChatTelegramBotService.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -26,6 +27,7 @@ namespace ChatTelegramBot.Controllers
         public List<ChatTelegramBotService.User> RegisteredUsers = new List<ChatTelegramBotService.User>();
         public Item user = null;
         private ChatBotContext _context;
+        private string bootToken = "1417186445:AAGFG-jByzgAEhaZRAKLnnJOigAXbzM8dhU";
 
         public BotController(ChatBotContext context)
         {
@@ -545,6 +547,52 @@ namespace ChatTelegramBot.Controllers
                 }
             }
 
+
+            return Ok();
+        }
+
+        [HttpPost("botsendmessage")]
+        public async Task<IActionResult> BotSendMessage([FromBody] string destID)
+        {
+            try
+            {
+                var message = "🇧🇷 Olá, somos da ANGEL SIGNALS. O método Europeu agora no Brasil 🇧🇷\n" +
+                              "Estamos mandando esta mensagem com o seu presente.\n" +
+                              "Acesse o link abaixo e assista o nosso mini curso.\n" +
+                              "🔥 Também não deixe de nos seguir no instagram e acompanhe as operações nos Stories.\n" +
+                              "➡ http://bit.ly/Instagram-Angel" +
+                              "🚨 MINI-CURSO 100% GRÁTIS \n" +
+                              "➡ http://bit.ly/mini-curso-traderX";
+                var bot = new Telegram.Bot.TelegramBotClient(bootToken);
+                await bot.SendTextMessageAsync(destID, message);
+                return new StatusCodeResult(StatusCodes.Status200OK);
+            }
+            catch (Exception e)
+            {
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpPost("chatbot")]
+        public async Task<IActionResult> ChatBot([FromBody] Update update)
+        {
+            TelegramBotClient client = new TelegramBotClient("1417186445:AAGFG-jByzgAEhaZRAKLnnJOigAXbzM8dhU");
+
+            var rkm = new ReplyKeyboardMarkup();
+            rkm.Keyboard = new KeyboardButton[][]
+                {
+                    new KeyboardButton[]
+                    {
+                        //new KeyboardButton("item"),
+                        new KeyboardButton("/começar")
+                    },
+                    new KeyboardButton[]
+                    {
+                        new KeyboardButton("/suporte")
+                    }
+                };
+
+            await client.SendTextMessageAsync(1079068893, "Text", replyMarkup: rkm);
 
             return Ok();
         }

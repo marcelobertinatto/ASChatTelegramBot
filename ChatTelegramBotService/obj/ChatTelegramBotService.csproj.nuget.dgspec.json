@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBot.csproj": {}
+    "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/ChatTelegramBotService.csproj": {}
   },
   "projects": {
-    "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBot.csproj": {
+    "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/ChatTelegramBotService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBot.csproj",
-        "projectName": "ChatTelegramBot",
-        "projectPath": "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBot.csproj",
+        "projectUniqueName": "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/ChatTelegramBotService.csproj",
+        "projectName": "ChatTelegramBotService",
+        "projectPath": "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/ChatTelegramBotService.csproj",
         "packagesPath": "/Users/marcelobertinatto/.nuget/packages/",
-        "outputPath": "/Users/marcelobertinatto/git/ASChatTelegramBot/obj/",
+        "outputPath": "/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marcelobertinatto/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -35,16 +35,24 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[12.0.3, )"
             },
-            "Telegram.Bot": {
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[15.7.1, )"
+              "version": "[3.2.4, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -58,10 +66,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },

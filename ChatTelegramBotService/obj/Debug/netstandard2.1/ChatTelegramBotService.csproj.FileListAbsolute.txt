@@ -1,0 +1,17 @@
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.deps.json
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.dll
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.pdb
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.AssemblyInfoInputs.cache
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.AssemblyInfo.cs
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.csproj.CoreCompileInputs.cache
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.dll
+/Users/marcelobertinatto/git/ChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.pdb
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.deps.json
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.dll
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/bin/Debug/netstandard2.1/ChatTelegramBotService.pdb
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.csprojAssemblyReference.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.AssemblyInfoInputs.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.AssemblyInfo.cs
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.csproj.CoreCompileInputs.cache
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.dll
+/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.pdb
