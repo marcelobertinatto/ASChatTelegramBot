@@ -576,11 +576,17 @@ namespace ChatTelegramBot.Controllers
         [HttpPost("chatbot")]
         public async Task<IActionResult> ChatBot([FromBody] Update update)
         {
-            TelegramBotClient client = new TelegramBotClient("1417186445:AAGFG-jByzgAEhaZRAKLnnJOigAXbzM8dhU");
+            try
+            {
+                var ChatIdToBeIgnoredChatBot = new List<string>();
 
-            InlineKeyboardMarkup myInlineKeyboard = new InlineKeyboardMarkup(
-                new InlineKeyboardButton[][]
-                {
+                //Chat Id's to be ignored by the BOT
+                ChatIdToBeIgnoredChatBot.AddRange(new List<string> { "-1001233703026", "-1001150279812", "-1001150279812" });
+                TelegramBotClient client = new TelegramBotClient("1417186445:AAGFG-jByzgAEhaZRAKLnnJOigAXbzM8dhU");
+
+                InlineKeyboardMarkup myInlineKeyboard = new InlineKeyboardMarkup(
+                    new InlineKeyboardButton[][]
+                    {
                     new InlineKeyboardButton[] // First row
                     {
                         InlineKeyboardButton.WithCallbackData(
@@ -598,53 +604,125 @@ namespace ChatTelegramBot.Controllers
                     new InlineKeyboardButton[] // third row
                     {
                         InlineKeyboardButton.WithCallbackData(
-                            "Planos e formas de Pagamentos 🤑", // Button Name
+                            "Planos e Formas de Pagamentos 🤑", // Button Name
                             "planos" // Answer you'll recieve
+                        )
+                    },
+                    new InlineKeyboardButton[] // third row
+                    {
+                        InlineKeyboardButton.WithCallbackData(
+                            "Site e Instagram ✍🏼", // Button Name
+                            "site" // Answer you'll recieve
+                        )
+                    },
+                    new InlineKeyboardButton[] // third row
+                    {
+                        InlineKeyboardButton.WithCallbackData(
+                            "Confirmar Pagamento 💵", // Button Name
+                            "pag" // Answer you'll recieve
                         )
                     }
                 }
-            );
+                );
 
-            //first message
-            if (update.Message != null)
-            {
-                switch (update.Message.Text)
+                InlineKeyboardMarkup secondKeyboard = new InlineKeyboardMarkup(
+                       new InlineKeyboardButton[][]
+                       {
+                            new InlineKeyboardButton[] // First row
+                            {
+                                InlineKeyboardButton.WithCallbackData(
+                                    "Volta Menu Inicial ⬅️", // Button Name
+                                    "voltar" // Answer you'll recieve
+                                )
+                            }
+                       }
+                    );
+
+
+                //first message
+                if (update.Message != null)
                 {
-                    case "/start":
-                        await client.SendTextMessageAsync(1079068893, "start", replyMarkup: myInlineKeyboard);
-                        break;
-                    default:
-                        await client.SendTextMessageAsync(1079068893, "standard", replyMarkup: myInlineKeyboard);
-                        break;
-                }
-            }
-            else
-            {
-                //reply from inline keyboard
-                if (update.CallbackQuery.Data != null)
-                {
-                    switch (update.CallbackQuery.Data)
+                    var chat = ChatIdToBeIgnoredChatBot.FirstOrDefault(x => x == update.Message.Chat.Id.ToString());
+                    if (chat == null)
                     {
-                        case "/start":
-                            await client.SendTextMessageAsync(1079068893, "start", replyMarkup: myInlineKeyboard);
-                            break;
-                        case "iniciante":
-                            await client.SendTextMessageAsync(1079068893, "iniciante", replyMarkup: myInlineKeyboard);
-                            break;
-                        case "suporte":
-                            await client.SendTextMessageAsync(1079068893, "suporte", replyMarkup: myInlineKeyboard);
-                            break;
-                        case "planos":
-                            await client.SendTextMessageAsync(1079068893, "Planos", replyMarkup: myInlineKeyboard);
-                            break;
-                        default:
-                            await client.SendTextMessageAsync(1079068893, "standard", replyMarkup: myInlineKeyboard);
-                            break;
+                        switch (update.Message.Text)
+                        {
+                            case "/start":
+                                await client.SendTextMessageAsync(update.Message.Chat.Id,
+                                    "Olá, somos da equipe ANGEL SIGNALS 🇧🇷🇨🇮. \n" +
+                                    "Para iniciar, selecione: uma das opções abaixo. Assim conseguiremos \n" +
+                                    "garantir o suporte a você! 👇🏼👇🏼",
+                                    replyMarkup: myInlineKeyboard);
+                                break;
+                            default: await client.SendTextMessageAsync(update.Message.Chat.Id,
+                                    "Olá, somos da equipe ANGEL SIGNALS 🇧🇷🇨🇮. \n" +
+                                    "Para iniciar, selecione: uma das opções abaixo. Assim conseguiremos \n" +
+                                    "garantir o suporte a você! 👇🏼👇🏼",
+                                    replyMarkup: myInlineKeyboard);
+                                break;
+                        }
                     }
                 }
-            }
+                else
+                {
+                    //reply from inline keyboard
+                    if (update.CallbackQuery.Data != null)
+                    {
+                        var chat = ChatIdToBeIgnoredChatBot.FirstOrDefault(x => x == update.CallbackQuery.Message.Chat.Id.ToString());
+                        if (chat == null)
+                        {
+                            switch (update.CallbackQuery.Data)
+                            {
+                                case "iniciante":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        GetInicianteMessage(),
+                                        replyMarkup: secondKeyboard);
+                                    break;
+                                case "suporte":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        GetSuporteMessage(),
+                                        replyMarkup: secondKeyboard);
+                                    break;
+                                case "planos":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        GetPlanosMessage(),
+                                        replyMarkup: secondKeyboard);
+                                    break;
+                                case "site":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        GetSiteMessage(),
+                                        replyMarkup: secondKeyboard);
+                                    break;
+                                case "pag":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        GetPagMessage(),
+                                        replyMarkup: secondKeyboard);
+                                    break;
+                                case "voltar":
+                                    await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                        "Olá, somos da equipe ANGEL SIGNALS 🇧🇷🇨🇮. \n" +
+                                        "Para iniciar, selecione: uma das opções abaixo. Assim conseguiremos \n" +
+                                        "garantir o suporte a você! 👇🏼👇🏼",
+                                        replyMarkup: myInlineKeyboard);
+                                    break;
+                                default: await client.SendTextMessageAsync(update.CallbackQuery.Message.Chat.Id,
+                                    "Olá, somos da equipe ANGEL SIGNALS 🇧🇷🇨🇮. \n" +
+                                    "Para iniciar, selecione: uma das opções abaixo. Assim conseguiremos \n" +
+                                    "garantir o suporte a você! 👇🏼👇🏼",
+                                    replyMarkup: myInlineKeyboard);
+                                    break;
+                            }
+                        }
+                    }
+                }
+                
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return Ok();
+            }
         }
 
         private string[] ExtractEmails(string str)
@@ -727,6 +805,80 @@ namespace ChatTelegramBot.Controllers
             }
 
             return returnedValue;
+        }
+
+        private string GetInicianteMessage()
+        {
+            var returnedMessage = new StringBuilder();
+
+            returnedMessage.Append("Olá , somos da equipe ANGEL SIGNALS 🇧🇷🇨🇮. \n");
+            returnedMessage.Append("Nós operamos no mercado de operações binárias utilizando método Europeu utilizando a IQ Option. \n");
+            returnedMessage.Append("Mas você pode escolher outras corretoras de seu gosto como, por exmeplo, a Binomo. \n");
+            returnedMessage.Append("O que você precisa para começar a operar? Veja nossas dicas abaixo: \n\n");
+            returnedMessage.Append("1 - Abrir uma conta na corretora. Segue o link para você começar agora mesmo https://bit.ly/CadastroIqOptionn \n");
+            returnedMessage.Append("2 - Fazer um depósito mínimo e começar a operar. \n\n");
+            returnedMessage.Append("Quer começar na frente de muitos utilizando o nosso método Europeu de graça? \n");
+            returnedMessage.Append("Se sim, acesso o link abaixo e faça o seu cadastro para receber o nosso mini curso gratuito. \n");
+            returnedMessage.Append("👉🏼 https://bit.ly/CadastroIqOptionn");
+
+            return returnedMessage.ToString();
+        }
+
+        private string GetSuporteMessage()
+        {
+            var returnedMessage = new StringBuilder();
+
+            returnedMessage.Append("Está com problemas/dúvidas e não sabe o que fazer? \n\n");
+            returnedMessage.Append("Mande mensagem para o @joao_brito5");
+
+            return returnedMessage.ToString();
+        }
+
+        private string GetPlanosMessage()
+        {
+            var returnedMessage = new StringBuilder();
+
+            returnedMessage.Append("Planos e Formas de Pagamentos 💵💵\n\n");
+            returnedMessage.Append("Formas de Pagamentos: \n");
+            returnedMessage.Append("1 - Boleto \n");
+            returnedMessage.Append("2 - Pix \n"); 
+            returnedMessage.Append("3 - Cartão de Crédito \n");
+            returnedMessage.Append("4 - Cartão de Débito \n\n");
+            returnedMessage.Append("Planos: \n");
+            returnedMessage.Append("1 - Sala de sinais 24 horas do nosso robô Mister X: R$80,00/mês\n");
+            returnedMessage.Append("2 - Sala de sinais VIP (apenas 15 vagas): R$120,00/mês \n");
+            returnedMessage.Append("3 - Sala de sinais VIP + Curso do básico ao avançado (apenas 10 vagas): R$297,00 com 1 mês de sala " +
+                "VIP. Após isto, R$120,00/mês. 👈 Este é o mais recomendado para você aprender a operar e não somente ficar copiando" +
+                " e colando sinais!!! \n\n\n");
+            returnedMessage.Append("👉🏼 Quer conhecer mais sobre o nosso trabalho e não sabe como? Acess o nosso site: https://angelsignals.live/acesso \n");
+
+
+
+            return returnedMessage.ToString();
+        }
+
+        private string GetSiteMessage()
+        {
+            var returnedMessage = new StringBuilder();
+
+            returnedMessage.Append("Nosso site e Instagram 🤳\n\n");
+            returnedMessage.Append("1 - Site: https://angelsignals.live/acesso \n");
+            returnedMessage.Append("2 - Instagram:http://bit.ly/Instagram-Angel \n");
+            returnedMessage.Append("3 - Facebook: https://www.facebook.com/angelsignalsbr \n");
+            returnedMessage.Append("4 - Nossa sala gratuita: https://t.me/joinchat/NwYx80mI0HLcq3SX37zfjw ");
+
+            return returnedMessage.ToString();
+        }
+
+        private string GetPagMessage()
+        {
+            var returnedMessage = new StringBuilder();
+
+            returnedMessage.Append("Atenção⚠️🚨\n\n");
+            returnedMessage.Append("👉🏼 Mande a foto de seu comprovante para: @joao_brito5\n");
+
+
+            return returnedMessage.ToString();
         }
     }
 }

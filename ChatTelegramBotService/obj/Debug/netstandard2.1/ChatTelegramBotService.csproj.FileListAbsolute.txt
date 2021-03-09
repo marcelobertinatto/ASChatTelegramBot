@@ -4,4 +4,3 @@
 /Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.csproj.CoreCompileInputs.cache
 /Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.dll
 /Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.pdb
-/Users/marcelobertinatto/git/ASChatTelegramBot/ChatTelegramBotService/obj/Debug/netstandard2.1/ChatTelegramBotService.csprojAssemblyReference.cache
