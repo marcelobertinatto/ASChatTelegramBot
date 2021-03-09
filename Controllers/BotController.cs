@@ -846,10 +846,13 @@ namespace ChatTelegramBot.Controllers
             returnedMessage.Append("4 - Cartão de Débito \n\n");
             returnedMessage.Append("Planos: \n");
             returnedMessage.Append("1 - Sala de sinais 24 horas do nosso robô Mister X: R$80,00/mês\n");
+            returnedMessage.Append("➡️ Link para pag: https://pay.hotmart.com/S47322547J?off=gpn9dvsr&checkoutMode=10&bid=1614020681019 \n");
             returnedMessage.Append("2 - Sala de sinais VIP (apenas 15 vagas): R$120,00/mês \n");
+            returnedMessage.Append("➡️ Link para pag: https://pay.hotmart.com/S47322547J?off=er8mf44m&checkoutMode=6 \n");
             returnedMessage.Append("3 - Sala de sinais VIP + Curso do básico ao avançado (apenas 10 vagas): R$297,00 com 1 mês de sala " +
                 "VIP. Após isto, R$120,00/mês. 👈 Este é o mais recomendado para você aprender a operar e não somente ficar copiando" +
-                " e colando sinais!!! \n\n\n");
+                " e colando sinais!!! \n");
+            returnedMessage.Append("➡️ Link para pag: https://pay.hotmart.com/S47322547J?off=2t6e8wut&checkoutMode=6 \n\n\n");
             returnedMessage.Append("👉🏼 Quer conhecer mais sobre o nosso trabalho e não sabe como? Acess o nosso site: https://angelsignals.live/acesso \n");
 
 
