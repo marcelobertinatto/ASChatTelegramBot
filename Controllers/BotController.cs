@@ -578,21 +578,71 @@ namespace ChatTelegramBot.Controllers
         {
             TelegramBotClient client = new TelegramBotClient("1417186445:AAGFG-jByzgAEhaZRAKLnnJOigAXbzM8dhU");
 
-            var rkm = new ReplyKeyboardMarkup();
-            rkm.Keyboard = new KeyboardButton[][]
+            InlineKeyboardMarkup myInlineKeyboard = new InlineKeyboardMarkup(
+                new InlineKeyboardButton[][]
                 {
-                    new KeyboardButton[]
+                    new InlineKeyboardButton[] // First row
                     {
-                        //new KeyboardButton("item"),
-                        new KeyboardButton("/começar")
+                        InlineKeyboardButton.WithCallbackData(
+                            "Sou Iniciante 🙂", // Button Name
+                            "iniciante" // Answer you'll recieve
+                        )
                     },
-                    new KeyboardButton[]
+                    new InlineKeyboardButton[] // second row
                     {
-                        new KeyboardButton("/suporte")
+                        InlineKeyboardButton.WithCallbackData(
+                            "Suporte 🤓", // Button Name
+                            "suporte" // Answer you'll recieve
+                        )
+                    },
+                    new InlineKeyboardButton[] // third row
+                    {
+                        InlineKeyboardButton.WithCallbackData(
+                            "Planos e formas de Pagamentos 🤑", // Button Name
+                            "planos" // Answer you'll recieve
+                        )
                     }
-                };
+                }
+            );
 
-            await client.SendTextMessageAsync(1079068893, "Text", replyMarkup: rkm);
+            //first message
+            if (update.Message != null)
+            {
+                switch (update.Message.Text)
+                {
+                    case "/start":
+                        await client.SendTextMessageAsync(1079068893, "start", replyMarkup: myInlineKeyboard);
+                        break;
+                    default:
+                        await client.SendTextMessageAsync(1079068893, "standard", replyMarkup: myInlineKeyboard);
+                        break;
+                }
+            }
+            else
+            {
+                //reply from inline keyboard
+                if (update.CallbackQuery.Data != null)
+                {
+                    switch (update.CallbackQuery.Data)
+                    {
+                        case "/start":
+                            await client.SendTextMessageAsync(1079068893, "start", replyMarkup: myInlineKeyboard);
+                            break;
+                        case "iniciante":
+                            await client.SendTextMessageAsync(1079068893, "iniciante", replyMarkup: myInlineKeyboard);
+                            break;
+                        case "suporte":
+                            await client.SendTextMessageAsync(1079068893, "suporte", replyMarkup: myInlineKeyboard);
+                            break;
+                        case "planos":
+                            await client.SendTextMessageAsync(1079068893, "Planos", replyMarkup: myInlineKeyboard);
+                            break;
+                        default:
+                            await client.SendTextMessageAsync(1079068893, "standard", replyMarkup: myInlineKeyboard);
+                            break;
+                    }
+                }
+            }
 
             return Ok();
         }

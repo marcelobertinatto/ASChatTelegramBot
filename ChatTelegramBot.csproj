@@ -4,11 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
     <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
     <UserSecretsId>6fab25d1-2715-4d20-9599-3c45bd6d773c</UserSecretsId>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>  
   </PropertyGroup>
 
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="ChatTelegramBotService\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Telegram.Bot" Version="15.7.1" />
@@ -16,9 +19,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Remove="ASChatTelegramBot\ConsoleRequestTest\bin\Debug\netcoreapp3.1\ConsoleRequestTest.runtimeconfig.dev.json" />
+    <Content Remove="ChatTelegramBotService\bin\Debug\netstandard2.1\ChatTelegramBotService.deps.json" />
+    <Content Remove="ChatTelegramBotService\obj\project.assets.json" />
+    <Content Remove="ChatTelegramBotService\obj\ChatTelegramBotService.csproj.nuget.dgspec.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChatTelegramBotService\ChatTelegramBotService.csproj">
+    <Compile Remove="ChatTelegramBotService\Data\ChatBotContext.cs" />
+    <Compile Remove="ChatTelegramBotService\HotmartService.cs" />
+    <Compile Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\User.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\MemoryCacher.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\UserLog.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\Credentials.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\NewPurchases.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\Signatures.cs" />
+    <Compile Remove="ChatTelegramBotService\Model\Authentication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ChatTelegramBotService\bin\Debug\netstandard2.1\ChatTelegramBotService.pdb" />
+    <None Remove="ChatTelegramBotService\bin\Debug\netstandard2.1\ChatTelegramBotService.dll" />
+    <None Remove="ChatTelegramBotService\obj\ChatTelegramBotService.csproj.nuget.g.targets" />
+    <None Remove="ChatTelegramBotService\obj\project.nuget.cache" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.assets.cache" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.csprojAssemblyReference.cache" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.csproj.FileListAbsolute.txt" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.pdb" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.csproj.CoreCompileInputs.cache" />
+    <None Remove="ChatTelegramBotService\obj\Debug\netstandard2.1\ChatTelegramBotService.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ChatTelegramBotService\ChatTelegramBotService.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

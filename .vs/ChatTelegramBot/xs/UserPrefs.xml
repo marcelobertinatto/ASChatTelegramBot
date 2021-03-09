@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{3C6BC30E-5B12-40CD-AF24-A81A0E634274}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BotController.cs">
+    <Files>
+      <File FileName="Controllers/BotController.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ChatTelegramBot" expanded="True" selected="True">
+          <Node name="ChatTelegramBot" expanded="True">
             <Node name="ChatTelegramBot" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="BotController.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="ChatTelegramBotService" expanded="True" />
           </Node>
         </State>
       </Pad>
